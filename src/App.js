@@ -1,8 +1,9 @@
 import React from 'react';
+import Navbar from "./component/navbars/Navbar";
 
 function App() {
   return (
-    <h1> hello sdasdasdassad word</h1>
+    <Navbar/>
   );
 }
 
