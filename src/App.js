@@ -1,9 +1,19 @@
 import React from 'react';
+import KontaktOs from './component/KontaktOs';
 
-function App() {
-  return (
-    <h1> hello sdasdasdassad word</h1>
-  );
+
+
+
+
+
+function App(){
+
+
+  return(
+    <div>
+      <KontaktOs/>
+    </div>
+
+  )
 }
-
-export default App;
+export default App
