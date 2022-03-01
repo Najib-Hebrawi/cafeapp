@@ -1,9 +1,9 @@
-import React from "react";
+import React,{Component} from "react";
 
 
 
 
-class KontaktOs extends React.Component{
+class KontaktOs extends Component{
 
 
     render(){
