@@ -1,7 +1,8 @@
 import React from "react";
 import '../../App.css'
-import HomeSection from "./HomeSection";
-import CardView from "./CardView";
+import HomeSection from "./homeview/HomeSection";
+import CardView from "./cards/CardView";
+import ItemSection from "./item/ItemSection";
 
 
 function HomePage(){
@@ -9,6 +10,7 @@ function HomePage(){
         <>
             <HomeSection/>
             <CardView/>
+            <ItemSection/>
         </>
 
     )

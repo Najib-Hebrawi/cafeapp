@@ -1,0 +1,41 @@
+.best {
+    /*todo change the padding*/
+    padding-left: 17rem;
+    padding-right: 18rem;
+    background: #FFFDF1;
+
+
+}
+
+.best > div {
+    display: flex;
+
+}
+
+.best .container {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.2rem;
+    padding: 1rem;
+
+}
+
+.best img {
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(5, 15, 33, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.best .container .text {
+    text-align: center;
+    margin: 4rem 0;
+    width: 100%;
+    color: #662626;
+    position: center;
+}
+

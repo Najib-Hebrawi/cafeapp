@@ -5,10 +5,10 @@
 
 h1 {
     text-align: center;
+    color: #662626;
 }
 
 .cards__container {
-
     display: flex;
     flex-flow: column;
     align-items: center;

@@ -12,19 +12,16 @@ function CardView(){
                         <CardItem
                             src="images/card_item1.jpg"
                             text="Pandekager"
-                            // label='adasdsa'
                             path='/menu'
                         />
                         <CardItem
                             src="images/card_item2.jpg"
                             text="Kaffe"
-                            // label='adasdsa'
                             path='/menu'
                         />
                     <CardItem
                         src="images/card_item3.jpg"
                         text="Frugtsalat"
-                        // label='adasdsa'
                         path='/menu'
                     />
                     <CardItem
