@@ -14,7 +14,7 @@ function KontaktOs () {
     return(
 
         <div >
-            <img src={image} alt="kontakt"/>
+            <img src={image} alt="a image of a frugt"/>
            
 
         </div>
