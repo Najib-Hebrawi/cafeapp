@@ -1,37 +1,23 @@
 import React,{Component} from "react";
-
-
-
-
-class KontaktOs extends Component{
-
-
-    render(){
-        return(
-            <div>
-
-                <h1>Test</h1>
-            </div>
-        )
-    }
-}
-
-export default KontaktOs
+import image from './images_KontaktOs/KontaktOsImage.jpg';
 
 
 
 
 
-/*
-function KontaktOs(){
+
+
+
+function KontaktOs () {
+    
     return(
-        <div>
-            <h1>
-                sdasd
-            </h1>
-        </div>
 
+        <div >
+            <img src={image} alt="kontakt"/>
+           
+
+        </div>
     )
 }
 export default KontaktOs
-*/
+
