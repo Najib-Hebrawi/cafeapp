@@ -3,9 +3,17 @@
 
 
 img{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height:18pc;
+   padding-top: 7pc;
+   object-fit: cover;
+  
 
-
-    padding-top: 50;
-    height: 20pc;
-    width: 100px;
+   
+   
 }
