@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import image from './images_KontaktOs/KontaktOsImage.jpg';
+import '../component/KontaktOsStyle.css';
 
 
 
