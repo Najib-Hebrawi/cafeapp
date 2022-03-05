@@ -9,7 +9,7 @@ import '../component/KontaktOsStyle.css';
 
 
 
-function KontaktOs () {
+function ImageInTheMeddil () {
     
     return(
 
@@ -20,5 +20,5 @@ function KontaktOs () {
         </div>
     )
 }
-export default KontaktOs
+export default ImageInTheMeddil
 

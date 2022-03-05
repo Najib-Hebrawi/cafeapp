@@ -1,17 +1,12 @@
 import React from 'react';
-import KontaktOs from './component/KontaktOs';
-
-
-
+import ImageInTheMeddil from './component/ImageInTheMeddil';
 
 
 
 function App(){
-
-
   return(
     <div>
-      <KontaktOs/>
+      <ImageInTheMeddil/>
     </div>
 
   )
