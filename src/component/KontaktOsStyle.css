@@ -1,6 +1,19 @@
 
 
 
+callIcon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height:18pc;
+   padding-top: 7pc;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
 
 img{
     text-align: center;
@@ -13,8 +26,47 @@ img{
    padding-top: 7pc;
    object-fit: cover;
    border-radius: 8px;
- 
-   
   
+ 
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight: 1000 !important;
+    background-color: white;
+    color: #662626;
+    padding: 100px 50px;
+    text-align: center;
+    display: inline-block !important;
+    text-decoration: none;
+    border-radius:  40px;
+    border-color: white;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transition: all 0.3s 0s ease-in-out;
+    box-shadow: lightcoral;
+    margin-top: 16pc;
+    margin-bottom: 40pc;
    
 }
+#b1{
+    margin-left: 3pc;
+}
+#b2{
+    margin-left: 16pc;
+}
+#b3{
+    margin-left: 18pc;
+
+}
+
+
+button:hover {
+    transform: scale(1.06, 1.01);
+    background-color: rgb(248, 244, 244);
+    text-decoration: none;
+}
+
