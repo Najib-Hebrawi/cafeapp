@@ -3,6 +3,8 @@ import '../../App.css'
 import HomeSection from "./homeview/HomeSection";
 import CardView from "./cards/CardView";
 import ItemSection from "./item/ItemSection";
+import Footer from "../footer/Footer";
+
 
 
 function HomePage(){
@@ -11,6 +13,8 @@ function HomePage(){
             <HomeSection/>
             <CardView/>
             <ItemSection/>
+            <Footer/>
+
         </>
 
     )

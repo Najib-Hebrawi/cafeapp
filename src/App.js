@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch}
 import './App.css';
 import HomePage from "./component/home/HomePage";
 
+
 function App() {
   return (
       <>
@@ -15,6 +16,7 @@ function App() {
                   <Route path='/' exact component={HomePage} />
               </Switch>
           </Router>
+
 
       </>
   );
