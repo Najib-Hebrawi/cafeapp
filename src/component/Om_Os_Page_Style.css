@@ -1,30 +1,39 @@
 img{
-
-    
-    position: absolute;
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    width: 80pc;
+    height:50pc;
     object-fit: cover;
-    width: 60pc;
-    height: 30c;
-    border-radius: 20px ;
-    margin-top: 140px;    
-   
+    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     
 }
 
 
 h1{
-    position: absolute;    
-    text-align: center;
-    margin-top: 50pc;
+    text-align: left;
+    margin: auto;
+    width: 80pc;
     color: rgba(102, 38, 38, 1);
-   
+    font-size: 50px;
+    line-height: 45px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
     }
 
 p{
-    position: absolute;
-    text-align: justify;
-    margin-top: 53pc;
-    width: 60pc;
-
+    margin: auto;
+    text-align: left;
+    font-size: 30px;
+    width: 80pc;
+    line-height: 50px;
+   
 }
 

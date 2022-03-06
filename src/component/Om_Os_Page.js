@@ -17,7 +17,9 @@ function Om_Os_Page () {
              alt="A image of a fruit"
              />
 
-
+            <h1>
+                DESSERTHUS I HJERTET AF BRØNSHØJ!
+             </h1>
             <p>
             Crepe Cafe laver selv den luftige pandekagedej, der giver små, flotte 
             pandekager – næsten som æbleskiver – som der endnu ikke er andre 
@@ -28,9 +30,7 @@ function Om_Os_Page () {
             du bestemt  få stillet dine cravings hos Crepe Cafe Desserthus. 
             </p>
 
-            <h1>
-                DESSERTHUS I HJERTET AF BRØNSHØJ!
-             </h1>
+            
 
 
 
