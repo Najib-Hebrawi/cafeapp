@@ -6,8 +6,8 @@ function ItemRow({title, subject, price}){
     const history = useHistory();
     return(
         //todo
-        // <div className="itemRow" onClick={()=>history('/')}>
-        <div className="itemRow" onClick={()=>history.push('/menu')}>
+        // <div className="itemRow" onClick={()=>history.push('/menu')}>
+        <div className="itemRow" >
             <span>
                 <h4 className="itemRow__title">{title}</h4>
             <div className="itemRow__subject">

@@ -19,17 +19,19 @@ function Footer() {
 
                     </div>
                     <div className='footer-link-items'>
-                        <Link to='/'>Forside</Link>
-                        <Link to='/'>Menu</Link>
-                        <Link to='/'>Om os</Link>
-                        <Link to='/'>Kontakt os</Link>
+                        <Link to='/menu'>Menu</Link>
+                        <Link to='/about_us'>Om os</Link>
+                        <Link to='/contact_us'>Kontakt os</Link>
+                        <Link to='/order_side'>Bestil nu</Link>
                     </div>
                 </div>
+
+
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
-                        <h4>Åbningstider</h4>
-                        <h5>Søn-Tors : 12.00 - 23.00</h5>
-                        <h5>Fre-Lør  : 12.00 - 00.00</h5>
+                        <p>Åbningstider</p>
+                        <p>Søn-Tors : 12.00 - 23.00</p>
+                        <p>Fre-Lør  : 12.00 - 00.00</p>
                     </div>
                     <div className='footer-link-items'>
                         <h3>Følg os på:</h3>
@@ -55,6 +57,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
+
             </div>
             <section className='website-rights'>
                 <small className='website-rights'>Crepe Cafe © 2020</small>
