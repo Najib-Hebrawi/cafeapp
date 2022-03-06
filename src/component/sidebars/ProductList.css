@@ -1,0 +1,6 @@
+.item_list{
+    flex: 1;
+    overflow: scroll;
+    padding-top: 80px;
+    padding-left: 30px;
+}
