@@ -29,7 +29,7 @@ function Om_Os_Page () {
             </p>
 
             <h1>
-             Desserthus i hjertet af Brønshøj!
+                DESSERTHUS I HJERTET AF BRØNSHØJ!
              </h1>
 
 

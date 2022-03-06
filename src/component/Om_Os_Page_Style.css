@@ -1,21 +1,30 @@
 img{
 
-position: absolute;
+    
+    position: absolute;
     object-fit: cover;
-    width: 70pc;
-    height: 50pc;
-    border-radius: 30px ;
-    margin-top: 200pc;
-
-
-}
-
-
-p{
-
+    width: 60pc;
+    height: 30c;
+    border-radius: 20px ;
+    margin-top: 140px;    
+   
+    
 }
 
 
 h1{
+    position: absolute;    
+    text-align: center;
+    margin-top: 50pc;
+    color: rgba(102, 38, 38, 1);
+   
+    }
+
+p{
+    position: absolute;
+    text-align: justify;
+    margin-top: 53pc;
+    width: 60pc;
 
 }
+
