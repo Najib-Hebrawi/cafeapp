@@ -1,8 +1,16 @@
 import React from 'react';
+import Om_Os_Page from './component/Om_Os_Page';
+
+
+
+
+
 
 function App() {
   return (
-    <h1> hello sdasdasdassad word</h1>
+
+     <Om_Os_Page/>
+
   );
 }
 
