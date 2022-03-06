@@ -14,7 +14,7 @@ function Om_Os_Page () {
 
             <img
              src={image}
-             alt="a image of a fruit"
+             alt="A image of a fruit"
              />
 
 
@@ -29,7 +29,7 @@ function Om_Os_Page () {
             </p>
 
             <h1>
-             Desserthus i hjertet af Brønshøj
+             Desserthus i hjertet af Brønshøj!
              </h1>
 
 
