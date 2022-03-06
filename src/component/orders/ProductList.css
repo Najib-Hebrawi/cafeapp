@@ -1,5 +1,5 @@
 .item_list{
-    flex: 1;
+    flex: .7;
     overflow: scroll;
     padding-top: 80px;
     padding-left: 30px;

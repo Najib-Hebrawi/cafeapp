@@ -2,7 +2,9 @@ import React from "react";
 import ItemRow from "./ItemRow";
 import "./ProductList.css"
 
+
 function ProductList(){
+
     return(
         <div className="item_list">
             <ItemRow title="Crepe" subject="Nutella, banana, and strawberry" price="69 kr."/>
