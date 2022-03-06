@@ -1,6 +1,8 @@
 import React from "react";
 import './HomeSection.css'
 import {Button} from "../../Buttons/Button";
+import {Link} from "react-router-dom";
+import {MenuButton} from "../../Buttons/MenuButton";
 
 function HomeSection() {
     return (
@@ -8,9 +10,10 @@ function HomeSection() {
             <h1>Velkommen til Crepe Cafe</h1>
 
             <div className="home-section-btn">
-                <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--large' > Se Menu</Button>
+                    <MenuButton className='btn' buttonStyle='btn--outline' buttonSize='btn--large'> Se Menu</MenuButton>
             </div>
         </div>
+
 
     )
     

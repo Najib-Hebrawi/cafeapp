@@ -13,7 +13,7 @@ const SIZES = [
     'btn--large'
 ]
 
-export const Button = ({
+export const MenuButton = ({
                            children,
                            type,
                            onClick,
@@ -28,12 +28,12 @@ export const Button = ({
         // <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}  onClick={onClick} type={type}>
         //     {children}
         // </button>
-        <Link to='/order_side' className ='btn-mobile'>
+        <Link to='/menu' className ='btn-mobile'>
             <button
                 className={`btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick} type={type}>
 
-              {children}
+                {children}
             </button>
         </Link>
     )

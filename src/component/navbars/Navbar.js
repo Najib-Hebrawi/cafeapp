@@ -48,17 +48,17 @@ function Navbar(){
                                 </Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/omos' className='nav-links' onClick={closeMobileMenu}>
+                                <Link to='/about_us' className='nav-links' onClick={closeMobileMenu}>
                                     Om os
                                 </Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/kontaktos' className='nav-links' onClick={closeMobileMenu}>
+                                <Link to='/contact_us' className='nav-links' onClick={closeMobileMenu}>
                                     Kontakt os
                                 </Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/bestil-nu' className='nav-links-mobile' onClick={closeMobileMenu}>
+                                <Link to='/order_side' className='nav-links-mobile' onClick={closeMobileMenu}>
                                     Bestil nu
                                 </Link>
                             </li>

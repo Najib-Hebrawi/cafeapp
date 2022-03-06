@@ -7,9 +7,9 @@
 
 .forside,
 .menu,
-.omos,
-.kontaktos,
-.bestil-nu{
+.about_us,
+.contact_us,
+.order_side{
     display: flex;
     height: 90vh;
     align-items: center;
@@ -17,31 +17,39 @@
     font-size: 3rem;
 }
 
+.menu {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+
+}
+
+.about_us {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+
+}
 
 
-/*.services {*/
-/*  */
-/*    background-position: center;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    color: #fff;*/
-/*    font-size: 100px;*/
-/*}*/
+.contact_us {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
 
-/*.products {*/
-/*  */
-/*    background-position: center;*/
-/*    background-size: fill;*/
-/*    background-repeat: no-repeat;*/
-/*    color: #fff;*/
-/*    font-size: 100px;*/
-/*}*/
+}
 
-/*.sign-up {*/
-/*   */
-/*    background-position: center;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    color: #fff;*/
-/*    font-size: 100px;*/
-/*}*/
+.order_side {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+
+}
