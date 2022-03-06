@@ -1,5 +1,4 @@
 import React from "react";
-import {Button} from "../Buttons/Button";
 import './Footer.css'
 import {Link} from "react-router-dom";
 
@@ -7,9 +6,9 @@ function Footer() {
     return (
         <div className='footer-container'>
 
-            <div class='footer-links'>
+            <div className='footer-links'>
                 <div className='footer-link-wrapper'>
-                    <div class='footer-link-items'>
+                    <div className='footer-link-items'>
                         {/*todo add logo*/}
                         <div className='footer-logo'>
                             <h3> Crepe Cafe</h3>
@@ -19,7 +18,7 @@ function Footer() {
                         </div>
 
                     </div>
-                    <div class='footer-link-items'>
+                    <div className='footer-link-items'>
                         <Link to='/'>Forside</Link>
                         <Link to='/'>Menu</Link>
                         <Link to='/'>Om os</Link>
@@ -27,17 +26,17 @@ function Footer() {
                     </div>
                 </div>
                 <div className='footer-link-wrapper'>
-                    <div class='footer-link-items'>
+                    <div className='footer-link-items'>
                         <h4>Åbningstider</h4>
                         <h5>Søn-Tors : 12.00 - 23.00</h5>
                         <h5>Fre-Lør  : 12.00 - 00.00</h5>
                     </div>
-                    <div class='footer-link-items'>
+                    <div className='footer-link-items'>
                         <h3>Følg os på:</h3>
                         <div className="social-media">
                             <div className="social-media-wrap">
                                 <Link
-                                    class='social-icon-link facebook'
+                                    className='social-icon-link facebook'
                                     to='/'
                                     target='_blank'
                                     aria-label='Facebook'
@@ -45,7 +44,7 @@ function Footer() {
                                     <i className='fab fa-facebook-f'/>
                                 </Link>
                                 <Link
-                                    class='social-icon-link instagram'
+                                    className='social-icon-link instagram'
                                     to='/'
                                     target='_blank'
                                     aria-label='Instagram'
@@ -57,7 +56,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <section class='website-rights'>
+            <section className='website-rights'>
                 <small className='website-rights'>Crepe Cafe © 2020</small>
             </section>
         </div>

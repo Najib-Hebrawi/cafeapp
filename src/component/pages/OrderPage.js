@@ -1,9 +1,12 @@
 import React from "react";
+import '../../App.css';
+import Sidebar from "../sidebars/Sidebar";
 
 
 function OrderPage(){
     return(
-        <h1>Hello From Order Page</h1>
+
+       <Sidebar/>
     )
 }
 

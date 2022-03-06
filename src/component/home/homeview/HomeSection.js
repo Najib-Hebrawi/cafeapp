@@ -1,7 +1,5 @@
 import React from "react";
 import './HomeSection.css'
-import {Button} from "../../Buttons/Button";
-import {Link} from "react-router-dom";
 import {MenuButton} from "../../Buttons/MenuButton";
 
 function HomeSection() {
