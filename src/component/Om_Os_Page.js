@@ -18,7 +18,7 @@ function Om_Os_Page () {
              />
 
             <h1>
-                DESSERTHUS I HJERTET AF BRØNSHØJ!
+                DESSERTHUS I HJERTET AF NØRREBRO!
              </h1>
             <p>
             Crepe Café laver selv den luftige pandekagedej, der giver små, flotte 
