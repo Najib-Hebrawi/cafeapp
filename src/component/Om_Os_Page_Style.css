@@ -7,14 +7,12 @@ img{
     margin: auto;
     margin-top: 200px;
     width: 80pc;
-    height:50pc;
+    height: 45pc;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 35px;
     padding: 1rem;
     margin-bottom: 1rem;
-    
 }
-
 
 h1{
     text-align: left;
@@ -31,9 +29,10 @@ h1{
 p{
     margin: auto;
     text-align: left;
-    font-size: 30px;
+    font-size: 35px;
     width: 80pc;
     line-height: 50px;
+    margin-bottom: 200px;
    
 }
 
