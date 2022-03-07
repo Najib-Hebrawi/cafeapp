@@ -11,9 +11,8 @@ function Footer() {
                     <div className='footer-link-items'>
                         {/*todo add logo*/}
                         <div className='footer-logo'>
-                            <h3> Crepe Cafe</h3>
                             <Link to='/' className='social-logo'>
-                                <i className='fas fa-utensils'/>
+                                Crepe Cafe <i class="fas fa-utensils"></i>
                             </Link>
                         </div>
 
