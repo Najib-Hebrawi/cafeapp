@@ -1,13 +1,12 @@
 img{
-  
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     margin-top: 200px;
-    width: 80pc;
-    height: 45pc;
+    width: 60pc;
+    height: 35pc;
     object-fit: cover;
     border-radius: 35px;
     padding: 1rem;
@@ -17,9 +16,9 @@ img{
 h1{
     text-align: left;
     margin: auto;
-    width: 80pc;
+    width: 60pc;
     color: rgba(102, 38, 38, 1);
-    font-size: 50px;
+    font-size: 40px;
     line-height: 45px;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -29,8 +28,8 @@ h1{
 p{
     margin: auto;
     text-align: left;
-    font-size: 35px;
-    width: 80pc;
+    font-size: 25px;
+    width: 60pc;
     line-height: 50px;
     margin-bottom: 200px;
    
