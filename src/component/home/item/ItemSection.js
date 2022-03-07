@@ -5,7 +5,7 @@ function ItemSection() {
     return (
         <div className='best'>
             <div className='container'>
-                <img src="images/card_item2.jpg"/>
+                <img src="images/card_item5.jpg"/>
                 <div className='text'>
                     <h1>Hjemmelavet lækkerier hos Crepe Cafe</h1>
                     <p>

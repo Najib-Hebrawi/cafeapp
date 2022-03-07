@@ -15,6 +15,9 @@
 
 }
 
+
+
+
 .footer-links {
     width: 100%;
     max-width: 1000px;
@@ -25,6 +28,14 @@
 .footer-link-wrapper {
     display: flex;
 }
+
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 
 .footer-link-items {
     display: flex;
