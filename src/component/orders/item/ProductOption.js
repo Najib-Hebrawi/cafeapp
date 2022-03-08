@@ -1,5 +1,5 @@
 import React from "react";
-import "./ItemRow.css"
+import "./ProductOption.css"
 import {useHistory} from "react-router-dom";
 
 function ItemRow({title, subject, price}){
