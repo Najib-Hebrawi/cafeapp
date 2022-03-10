@@ -1,0 +1,37 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.row.center {
+    align-items: center;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+
+.text-right {
+    text-align: right;
+}
+
+button {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    width: 100%;
+    cursor: pointer;
+}
+button.add {
+    background-color: var(--primary);
+    width: 1.5rem;
+}
+button.remove {
+    background-color: var(--primary);
+    width: 1.5rem;
+}
+

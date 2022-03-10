@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductOption.css"
 
 function ProductOption(props){
-    const {product}  =props;
+    const { product, onAdd } = props;
     return(
         //todo
         // <div className="itemRow" onClick={()=>history.push('/menu')}>
@@ -15,7 +15,7 @@ function ProductOption(props){
             </span>
             <p className="itemRow__price">{product.price} kr.</p>
             <div>
-                <button > add to cart</button>
+                <button onClick={() => onAdd(product)}>Tilføj til kurv</button>
             </div>
         </div>
     );
