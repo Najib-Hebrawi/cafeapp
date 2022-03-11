@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import {Button} from "../Buttons/Button";
 import './Navbar.css';
+import {onHidden} from "web-vitals/dist/modules/lib/onHidden";
 
 
 function Navbar(){
@@ -9,6 +10,8 @@ function Navbar(){
     const [button, setButton] = useState(true)
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const [visible, setVisible] = useState(false);  // visibility state
+
 
     const showButton = () => {
         if (window.innerWidth <= 960){
@@ -17,6 +20,8 @@ function Navbar(){
             setButton(true);
         }
     };
+
+
 
 
     useEffect( () => {
@@ -63,7 +68,15 @@ function Navbar(){
                                 </Link>
                             </li>
                         </ul>
-                        {button && <Button >Bestil nu</Button>}
+                        {/*{button  && visible && <Button onClick={() =>  setVisible(false)}>Bestil nu</Button>}*/}
+                        {button  && <Button >Bestil nu</Button>}
+
+                        {/*<div>*/}
+                        {/*    <button onClick={() => setVisible(true)}>Show</button>*/}
+                        {/*    <button onClick={() => setVisible(false)}>Hide</button>*/}
+                        {/*    {visible && <div>My element</div>}*/}
+                        {/*</div>*/}
+
                     </div>
                 </nav>
             </>

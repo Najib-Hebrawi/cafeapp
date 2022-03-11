@@ -1,0 +1,31 @@
+.item_list{
+    flex: .7;
+    overflow: scroll;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+.shopping_section{
+    background-color: #FFFDF1;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    flex: .5;
+
+}
+.sidebar{
+    margin-top: 30px;
+    /*margin-left: 10px;*/
+}
+
+.sidebar .header{
+    margin-bottom: 30px;
+}
+
+.body{
+    height: 100vh;
+}
+.order__body{
+    display:flex;
+    height: 100vh;
+}
+
