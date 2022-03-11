@@ -1,13 +1,13 @@
 import React from "react";
-//import image from './images_KontaktOs/KontaktOsImage.jpg';
 import '../App.css';
+import './ContactUsPage.css'
 
 function ContactUsPage(){
 
     return(
         <div >
-            <img
-                src={"image"}
+            <img className="img_view"
+                src={"images_KontaktOs/KontaktOsImage.jpg"}
                 alt="a image of a frugt"
             />
 
