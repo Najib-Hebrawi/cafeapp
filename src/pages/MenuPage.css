@@ -1,6 +1,7 @@
 
 
 .title{
+    color: orange;
     margin: auto;
     text-align: left;
     font-size: 25px;
@@ -8,7 +9,15 @@
     line-height: 50px;
 }
 
+#tableHead{
+    background-color: beige;
+    color: black;
+}
+
 .table{
+    background-color: bisque;
+    color: black;
+    
     margin: auto;
     text-align: left;
     font-size: 25px;
