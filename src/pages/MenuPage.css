@@ -1,89 +1,17 @@
-#main_menu_title{
+
+
+.title{
     margin: auto;
     text-align: left;
     font-size: 25px;
     width: 60pc;
     line-height: 50px;
-    margin-bottom: 200px;
 }
 
-#frugtsalat_title{
+.table{
     margin: auto;
     text-align: left;
     font-size: 25px;
     width: 60pc;
     line-height: 50px;
-    margin-bottom: 200px;
-}
-
-#cocktail_menu_title{
-    margin: auto;
-    text-align: left;
-    font-size: 25px;
-    width: 60pc;
-    line-height: 50px;
-    margin-bottom: 200px;
-
-}
-
-#milkshake_title{
-    margin: auto;
-    text-align: left;
-    font-size: 25px;
-    width: 60pc;
-    line-height: 50px;
-    margin-bottom: 200px;
-
-}
-
-
-#mojito_title{
-    margin: auto;
-    text-align: left;
-    font-size: 25px;
-    width: 60pc;
-    line-height: 50px;
-    margin-bottom: 200px;
-
-}
-
-#kaffe_title{
-    margin: auto;
-    text-align: left;
-    font-size: 25px;
-    width: 60pc;
-    line-height: 50px;
-    margin-bottom: 200px;
-
-}
-
-
-#main_menu_table{
-    table-layout: auto;
-    width: 180px;
-}
-
-#frugtsalat_table {
-    table-layout: fixed;
-    width: 180px;
-}
-
-#cocktail_table {
-    table-layout: auto;
-    width: 180px;
-}
-
-#milkshake_table {
-    table-layout: auto;
-    width: 180px;
-}
-
-#mojito_table {
-    table-layout: fixed;
-    width: 180px;
-}
-
-#kaffe_table {
-    table-layout: auto;
-    width: 180px;
 }

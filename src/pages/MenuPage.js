@@ -215,7 +215,7 @@ function MenuPage(){
     return (
         <div>
             <p id="main_menu_title">C R E P E</p>
-            <table class="table" id="main_menu_table">
+            <table className="table" id="main_menu_table">
 
                 <thead>
                 <tr>
@@ -237,9 +237,9 @@ function MenuPage(){
                 </tbody>
             </table>
 
-            <p id="frugtsalat title">FRUGTSALAT</p>
+            <p className="title" id="frugtsalat title">FRUGTSALAT</p>
 
-            <table class="table" id="frugtsalat_table">
+            <table className="table" id="frugtsalat_table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -261,7 +261,7 @@ function MenuPage(){
 
             <p id="cocktail_title">COCKTAIL </p>
 
-            <table class="table" id="cocktail_table">
+            <table className="table" id="cocktail_table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -282,7 +282,7 @@ function MenuPage(){
 
             <p id="milkshake_title">MILKSHAKE</p>
 
-            <table id="milkshake_table" class="table">
+            <table id="milkshake_table" className="table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -302,7 +302,7 @@ function MenuPage(){
             </table>
 
             <p id="mojito_title">MOJITO</p>
-            <table id="mojito_table" class="table">
+            <table id="mojito_table" className="table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -323,7 +323,7 @@ function MenuPage(){
 
             <p id="kaffe_title">KAFFE</p>
 
-            <table id = "kaffe_table" class="table">
+            <table id = "kaffe_table" className="table">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
