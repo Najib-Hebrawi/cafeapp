@@ -2,9 +2,10 @@ import React, {useState} from "react";
 import '../App.css';
 import './OrderPage.css'
 import data from "../component/orders/model/data";
-import SidebarOption from "../component/orders/controller/SidebarOption";
-import ProductOption from "../component/orders/controller/ProductOption";
-import BasketOption from "../component/orders/controller/BasketOption";
+import SidebarOption from "../component/orders/sections/SidebarOption";
+import ProductOption from "../component/orders/sections/ProductOption";
+import BasketOption from "../component/orders/sections/BasketOption";
+
 
 
 function OrderPage(){
@@ -13,6 +14,8 @@ function OrderPage(){
     const {products} = data;
 
     const [cartItems, setCartItems] = useState([]);
+    //const da = localStorage.setItem('myData', cartItems.toString())
+
 
     const onAdd = (product) => {
         const exist = cartItems.find((x) => x.id === product.id);
@@ -86,6 +89,7 @@ function OrderPage(){
         </>
     );
 }
+
 
 
 export default OrderPage

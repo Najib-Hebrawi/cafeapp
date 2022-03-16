@@ -1,0 +1,43 @@
+.input_section{
+    background-color: #FFFDF1;
+    padding: 5rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    flex: .7;
+
+}
+
+.input{
+    display: flex;
+    border: none;
+    -webkit-appearance: none;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 3px;
+    width: 60%;
+    outline: none;
+    margin: 25px;
+}
+
+.input:focus::placeholder{
+  color: transparent;
+}
+
+.input::placeholder{
+    color: #662626;
+    transition:color 0.3s ease ;
+}
+
+.shopping_sections{
+    background-color: #FFFDF1;
+    padding: 1rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    flex: .3;
+
+}
+

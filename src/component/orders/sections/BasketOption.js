@@ -2,10 +2,14 @@ import React from "react";
 import './BasketOption.css';
 import {useHistory} from "react-router-dom";
 
+
+
 function BasketOption(props){
     const { cartItems, onAdd, onRemove } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
     let history = useHistory();
+
+
     return (
         <aside className="block col-1">
             <h3>Indkøbskurv</h3>
@@ -49,7 +53,7 @@ function BasketOption(props){
                         </div>
                         <hr />
                         <div className="row">
-                            <button onClick={() => history.push('/order_view')}>
+                            <button  onClick={() => history.push('/order_view')}>
                                 Checkout
                             </button>
                         </div>
