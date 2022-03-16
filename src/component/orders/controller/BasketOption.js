@@ -1,9 +1,11 @@
 import React from "react";
-import './Basket.css'
-function Basket(props){
+import './BasketOption.css';
+import {useHistory} from "react-router-dom";
+
+function BasketOption(props){
     const { cartItems, onAdd, onRemove } = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
-
+    let history = useHistory();
     return (
         <aside className="block col-1">
             <h3>Indkøbskurv</h3>
@@ -47,7 +49,7 @@ function Basket(props){
                         </div>
                         <hr />
                         <div className="row">
-                            <button onClick={() => alert('Implement Checkout!')}>
+                            <button onClick={() => history.push('/order_view')}>
                                 Checkout
                             </button>
                         </div>
@@ -59,4 +61,4 @@ function Basket(props){
 }
 
 
-export default Basket
+export default BasketOption

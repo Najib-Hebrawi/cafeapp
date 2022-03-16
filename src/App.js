@@ -9,6 +9,7 @@ import Footer from "./component/footer/Footer";
 import MenuPage from "./pages/MenuPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
+import OrderCheckout from "./pages/OrderCheckout";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                   <Route path='/about_us' component={AboutUsPage} />
                   <Route path='/contact_us' component={ContactUsPage} />
                   <Route path='/order_side' component={OrderPage} />
+                  <Route path='/order_view' component={OrderCheckout} />
               </Switch>
               <Footer/>
           </Router>
