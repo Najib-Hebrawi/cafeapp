@@ -7,8 +7,8 @@ import OrderOverviewOption from "../component/orders/sections/OrderOverviewOptio
 
 function OrderCheckout() {
 
-    const [cartItems, setCartItems] = useState([]);
-    const data = localStorage.getItem('myData')
+    console.log(localStorage.getItem("message"));
+    const products = JSON.parse(localStorage.getItem("message"));
     return(
         <>
             <div className="app">
@@ -21,7 +21,7 @@ function OrderCheckout() {
 
                     {/*show item */}
                     <div className="shopping_sections">
-                        <OrderOverviewOption  cartItems={cartItems}>
+                        <OrderOverviewOption  cartItems={products}>
                         </OrderOverviewOption>
                     </div>
 

@@ -40,9 +40,6 @@ function BasketOption(props){
                             <div className="col-2">Items Price</div>
                             <div className="col-1 text-right">{itemsPrice} kr.</div>
                         </div>
-
-
-
                         <div className="row">
                             <div className="col-2">
                                 <strong>Total Price</strong>

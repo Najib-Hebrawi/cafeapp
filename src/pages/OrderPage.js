@@ -18,7 +18,10 @@ function OrderPage(){
     const {products} = data;
 
     const [cartItems, setCartItems] = useState([]);
-    //const da = localStorage.setItem('myData', cartItems.toString())
+    //https://stackoverflow.com/questions/59095295/react-js-localstorage-value-object
+    localStorage.setItem("message", JSON.stringify(cartItems));
+    const localProducts = JSON.parse(localStorage.getItem("message"));
+    console.log(typeof(cartItems))
 
 
     const onAdd = (product) => {
@@ -104,12 +107,10 @@ function OrderPage(){
                         </div>
                     </div>
 
-
-
                     {/*show basket card*/}
                     <div className="shopping_section">
                         <BasketOption
-                            cartItems={cartItems}
+                            cartItems={localProducts}
                             onAdd={onAdd}
                             onRemove={onRemove}>
                         </BasketOption>
