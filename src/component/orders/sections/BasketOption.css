@@ -35,3 +35,13 @@ button.remove {
     width: 1.5rem;
 }
 
+
+button:hover{
+    transition: all 0.3s ease-out;
+    background: #662626;
+    transition: 250ms;
+    color: white;
+}
+
+
+

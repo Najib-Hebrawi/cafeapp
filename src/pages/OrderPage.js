@@ -2,13 +2,17 @@ import React, {useState} from "react";
 import '../App.css';
 import './OrderPage.css'
 import data from "../component/orders/model/data";
-import SidebarOption from "../component/orders/sections/SidebarOption";
 import ProductOption from "../component/orders/sections/ProductOption";
 import BasketOption from "../component/orders/sections/BasketOption";
 
 
 
 function OrderPage(){
+    const [toggleState, setToggleState] = useState(1);
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
+
 
     const category = ["Crepe", "Frugtsalat","Cocktail", "Milkshake", "Kaffe"];
     const {products} = data;
@@ -43,37 +47,64 @@ function OrderPage(){
             );
         }
     };
+
     return(
         <>
             <div className="app">
                 <div className="order__body">
                     {/*show category*/}
                     <div className="sidebar">
-                        <h2 className="header">Kategorier</h2>
+                        <div className="container">
+                            <button
+                                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+                                onClick={() => toggleTab(1)}
+                            >
+                                {category[0]}
+                            </button>
+                            <button
+                                className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+                                onClick={() => toggleTab(2)}
+                            >
+                                {category[1]}
+                            </button>
+                            <button
+                                className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+                                onClick={() => toggleTab(3)}
+                            >
+                                {category[2]}
+                            </button>
+                        </div>
 
-                        <SidebarOption
-                            title = {category[0]}
-                            selected={true}/>
-
-                        <SidebarOption
-                            title={category[1]} />
-
-                        <SidebarOption
-                            title={category[2]} />
-
-                        <SidebarOption
-                            title={category[3]}/>
-
-                        <SidebarOption
-                            title={category[4]}/>
                     </div>
 
                     {/*show items*/}
-                    <div className="item_list">
-                        {products.map((product) => (
-                            <ProductOption  key={product.id} product={product} onAdd={onAdd} ></ProductOption>
-                        ))}
+                    <div className="content-tabs">
+                        <div
+                            className={toggleState === 1 ? "content  active-content" : "content"}
+                        >
+                            {products.slice(0,5).map((product) => (
+                                <ProductOption  key={product.id} product={product} onAdd={onAdd} ></ProductOption>
+                            ))}
+                        </div>
+
+                        <div
+                            className={toggleState === 2 ? "content  active-content" : "content"}
+                        >
+                            {products.slice(5,6).map((product) => (
+                                <ProductOption  key={product.id} product={product} onAdd={onAdd} ></ProductOption>
+                            ))}
+                        </div>
+
+                        <div
+                            className={toggleState === 3 ? "content  active-content" : "content"}
+                        >
+                            {products.slice(6,8).map((product) => (
+                                <ProductOption  key={product.id} product={product} onAdd={onAdd} ></ProductOption>
+                            ))}
+                        </div>
                     </div>
+
+
 
                     {/*show basket card*/}
                     <div className="shopping_section">
@@ -81,15 +112,21 @@ function OrderPage(){
                             cartItems={cartItems}
                             onAdd={onAdd}
                             onRemove={onRemove}>
-
                         </BasketOption>
+
                     </div>
+
+
                 </div>
             </div>
+
+
         </>
     );
+
 }
 
 
 
-export default OrderPage
+
+export default OrderPage;

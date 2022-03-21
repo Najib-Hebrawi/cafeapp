@@ -53,7 +53,7 @@ function BasketOption(props){
                         </div>
                         <hr />
                         <div className="row">
-                            <button  onClick={() => history.push('/order_view')}>
+                            <button  className={"btn-check"} onClick={() => history.push('/order_view')}>
                                 Checkout
                             </button>
                         </div>

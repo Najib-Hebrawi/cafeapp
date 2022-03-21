@@ -3,6 +3,7 @@
     overflow: scroll;
     padding-top: 80px;
     padding-left: 30px;
+
 }
 .shopping_section{
     background-color: #FFFDF1;
@@ -10,16 +11,12 @@
     margin: 0.5rem;
     border-radius: 0.5rem;
     flex: .5;
-
 }
 .sidebar{
     margin-top: 30px;
     /*margin-left: 10px;*/
 }
 
-.sidebar .header{
-    margin-bottom: 30px;
-}
 
 .body{
     height: 100vh;
@@ -29,3 +26,71 @@
     height: 100vh;
 }
 
+
+/*.sidebarOption{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    height: 40px;*/
+/*    padding: 0 10px;*/
+/*    border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    cursor: pointer ;*/
+/*    color: black;*/
+/*}*/
+
+/*.sidebarOption:hover,*/
+/*.sidebarOption:hover > h3,*/
+/*.sidebarOption--active,*/
+/*.sidebarOption--active > h3{*/
+/*    background-color: #EF7631;*/
+/*    color: #FFFDF1;*/
+/*    font-weight: 500 !important;*/
+
+/*}*/
+
+
+.tabs {
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    width: 50%;
+    background-color: #FFFDF1;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+}
+
+.tabs:hover{
+    transition: all 0.3s ease-out;
+    background: #EF7631;
+    transition: 250ms;
+}
+
+
+/*to show color in the current selected item*/
+.active-tabs  {
+    background: #EF7631;
+    border-bottom: 1px solid transparent;
+    color: white;
+}
+
+button {
+    border: none;
+
+}
+.content-tabs {
+    flex-grow : 1;
+}
+.content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.active-content {
+    display: block;
+}

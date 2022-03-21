@@ -31,6 +31,26 @@ const data = {
             price:'69',
         },
 
+        {
+            id:'6',
+            name:'Frugtsalat Nutella',
+            subject:'Frugtsalat med Nutella, banan, kiwi, ananas, jordbær, blommer, arabisk flødeskum og honning.',
+            price:'75',
+        },
+
+        {
+            id:'7',
+            name:'Banan, Jordbær & Mælk ',
+            subject:'Frugt blandet med vaniljeis.',
+            price:'79',
+        },
+        {
+            id:'8',
+            name:'Avocado',
+            subject:'Frugt blandet med vaniljeis.',
+            price:'79',
+        },
+
     ]
 };
 

@@ -17,14 +17,11 @@ function OrderCheckout() {
                     <div className={"input_section"}>
                         <input className={"input"} type={"text"} placeholder={"Indtast dit navn"}/>
                         <input className={"input"} type={"text"} placeholder={"Indtast dit telefonnummer"}/>
-
                     </div>
-
-
 
                     {/*show item */}
                     <div className="shopping_sections">
-                        <OrderOverviewOption cartItems={cartItems}>
+                        <OrderOverviewOption  cartItems={cartItems}>
                         </OrderOverviewOption>
                     </div>
 
