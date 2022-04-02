@@ -14,6 +14,7 @@ function OrderPage(){
     };
 
 
+
     const category = ["Crepe", "Frugtsalat","Cocktail", "Milkshake", "Kaffe"];
     const {products} = data;
 
