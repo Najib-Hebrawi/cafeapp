@@ -10,6 +10,7 @@ import MenuPage from "./pages/MenuPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
 import OrderCheckout from "./pages/OrderCheckout";
+import SignIn from "./SignIn";
 
 
 function App() {
@@ -19,14 +20,15 @@ function App() {
 
           <Router>
               <Navbar />
-              <Switch>
-                  <Route path='/' exact component={HomePage} />
-                  <Route path='/menu' component={MenuPage} />
-                  <Route path='/about_us' component={AboutUsPage} />
-                  <Route path='/contact_us' component={ContactUsPage} />
-                  <Route path='/order_side' component={OrderPage} />
-                  <Route path='/order_view' component={OrderCheckout} />
-              </Switch>
+              {/*<Switch>*/}
+              {/*    <Route path='/' exact component={HomePage} />*/}
+              {/*    <Route path='/menu' component={MenuPage} />*/}
+              {/*    <Route path='/about_us' component={AboutUsPage} />*/}
+              {/*    <Route path='/contact_us' component={ContactUsPage} />*/}
+              {/*    <Route path='/order_side' component={OrderPage} />*/}
+              {/*    <Route path='/order_view' component={OrderCheckout} />*/}
+              {/*</Switch>*/}
+              <SignIn/>
               <Footer/>
           </Router>
 
