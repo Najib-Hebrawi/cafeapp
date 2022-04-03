@@ -10,6 +10,7 @@ import MenuPage from "./pages/MenuPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
 import OrderCheckout from "./pages/OrderCheckout";
+import Footers from "./component/footer/Footers";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
                   <Route path='/order_side' component={OrderPage} />
                   <Route path='/order_view' component={OrderCheckout} />
               </Switch>
-              <Footer/>
+              <Footers/>
           </Router>
 
 
