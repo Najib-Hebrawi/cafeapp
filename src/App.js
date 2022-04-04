@@ -11,6 +11,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
 import OrderCheckout from "./pages/OrderCheckout";
 import Footers from "./component/footer/Footers";
+import DonePage from "./pages/DonePage";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                   <Route path='/contact_us' component={ContactUsPage} />
                   <Route path='/order_side' component={OrderPage} />
                   <Route path='/order_view' component={OrderCheckout} />
+                  <Route path='/done_page' component={DonePage} />
               </Switch>
               <Footers/>
           </Router>

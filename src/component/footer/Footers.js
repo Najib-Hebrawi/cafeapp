@@ -115,13 +115,14 @@ const Footer=() =>{
             <Right>
                 <Title>Kontakt</Title>
                 <ContactItem>
-                    <Room style={{marginRight:"10px"}}/> Lundtoftegade 105, 2200 København
+                    <Room style={{marginRight:"10px"}}/> København
+                    {/*Lundtoftegade 105, 2200*/}
                 </ContactItem>
                 <ContactItem>
-                    <Phone style={{marginRight:"10px"}}/> +45 91 98 98 03
+                    <Phone style={{marginRight:"10px"}}/> +45 12 34 56 78
                 </ContactItem>
                 <ContactItem>
-                    <MailOutline style={{marginRight:"10px"}} /> kontakt@crepecafe.dk
+                    <MailOutline style={{marginRight:"10px"}} /> info@crepecafe.dk
                 </ContactItem>
                 <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
             </Right>

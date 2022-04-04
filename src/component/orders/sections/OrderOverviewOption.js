@@ -40,7 +40,7 @@ function OrderOverviewOption(props){
                         </div>
                         <hr />
                         <div className="row">
-                            <button onClick={() => history.push('/')}>
+                            <button onClick={() => history.push('/done_page')}>
                                 Godkend ordre
                             </button>
                         </div>
