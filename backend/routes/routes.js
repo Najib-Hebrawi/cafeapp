@@ -4,12 +4,13 @@ const  router = express.Router()
 const requestOrder = require('../models/OrderProduct')
 
 router.post('/order',async (request,response) =>{
-    const user = await new requestOrder({
+    const requestedOrder = await new requestOrder({
+        orderId:request.body.orderId,
         username:request.body.username,
         phoneNumber:request.body.phoneNumber,
         userComment:request.body.userComment
     })
-    user.save()
+    requestedOrder.save()
         .then(data => {
             response.json(data)
         })

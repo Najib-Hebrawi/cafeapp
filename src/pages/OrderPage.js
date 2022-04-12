@@ -22,7 +22,7 @@ function OrderPage(){
     //https://stackoverflow.com/questions/59095295/react-js-localstorage-value-object
     localStorage.setItem("message", JSON.stringify(cartItems));
     const localProducts = JSON.parse(localStorage.getItem("message"));
-    console.log(typeof(cartItems))
+
 
 
     const onAdd = (product) => {

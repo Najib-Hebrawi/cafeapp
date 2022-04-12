@@ -5,12 +5,19 @@ import axios from "axios";
 import OrderOverviewOption from "../component/orders/sections/OrderOverviewOption";
 import {useHistory} from "react-router-dom";
 
+
 const OrderCheckout = () =>{
+
     let history = useHistory();
     const [username, addNames] = useState('')
     const [phoneNumber, addPhoneNumbers] = useState('')
     const [userComment, addComments] = useState('')
+    const [orderId, addOrdersId] = useState(Date.now())
+    const products = JSON.parse(localStorage.getItem("message"));
 
+    function addOrderId(event){
+        addOrdersId(event.target.value)
+    }
 
     function addName(event) {
         addNames(event.target.value)
@@ -28,6 +35,7 @@ const OrderCheckout = () =>{
     function onSubmit(){
         history.push('/done_page')
         const addOrder = {
+            orderId:orderId,
             username: username,
             phoneNumber: phoneNumber,
             userComment: userComment
@@ -35,14 +43,20 @@ const OrderCheckout = () =>{
         axios.post('http://localhost:4000/app/order',addOrder)
             .then(response => console.log(response.data))
         this.setState({
+            orderId:'',
             username:'',
             phoneNumber:'',
             userComment:''
         })
 
+
+
+
     }
-    console.log(localStorage.getItem("message"));
-    const products = JSON.parse(localStorage.getItem("message"));
+   //console.log(localStorage.getItem("message"));
+    console.log(products.valueOf())
+
+
 
 
     return(
@@ -50,6 +64,13 @@ const OrderCheckout = () =>{
             <form onSubmit={onSubmit} >
                 {/*write user info*/}
                 <div className={"input_section"}>
+
+                    {/*<input*/}
+                    {/*    className={"input"}*/}
+                    {/*    type={"text"}*/}
+                    {/*    onChange={addOrderId}*/}
+                    {/*    value={orderId}*/}
+                    {/*    placeholder={"Indtast dit navn"}/>*/}
                     <input
                         className={"input"}
                         type={"text"}
