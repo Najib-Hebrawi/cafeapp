@@ -15,6 +15,9 @@ const OrderCheckout = () =>{
     const [orderId, addOrdersId] = useState(Date.now())
     const products = JSON.parse(localStorage.getItem("message"));
 
+    localStorage.setItem("orderId", orderId.toString());
+
+
     function addOrderId(event){
         addOrdersId(event.target.value)
     }

@@ -23,10 +23,13 @@ const Dec = styled.h1 `
 
 
 const DonePage = () => {
+
+    const orderID = JSON.parse(localStorage.getItem("orderId"));
+
     return(
         <Container>
             <Text>Tak for din bestilling</Text>
-            <Dec>Ordrenummeret er 232122</Dec>
+            <Dec>Ordrenummeret er {orderID}</Dec>
 
         </Container>
     )
