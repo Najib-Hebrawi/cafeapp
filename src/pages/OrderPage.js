@@ -54,11 +54,10 @@ function OrderPage(){
 
     return(
         <>
-            <div className="app">
-                <div className="order__body">
+
+                <div className="body">
                     {/*show category*/}
                     <div className="sidebar">
-                        <div className="container">
                             <button
                                 className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                                 onClick={() => toggleTab(1)}
@@ -77,8 +76,6 @@ function OrderPage(){
                             >
                                 {category[2]}
                             </button>
-                        </div>
-
                     </div>
 
                     {/*show items*/}
@@ -117,10 +114,7 @@ function OrderPage(){
                         </BasketOption>
 
                     </div>
-
-
                 </div>
-            </div>
 
 
         </>

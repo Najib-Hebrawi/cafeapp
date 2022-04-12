@@ -11,8 +11,8 @@ function OrderCheckout() {
     const products = JSON.parse(localStorage.getItem("message"));
     return(
         <>
-            <div className="app">
-                <div className="order__body">
+
+                <div className="body">
                     {/*write user info*/}
                     <div className={"input_section"}>
                         <input className={"input"} type={"text"} placeholder={"Indtast dit navn"}/>
@@ -24,9 +24,8 @@ function OrderCheckout() {
                         <OrderOverviewOption  cartItems={products}>
                         </OrderOverviewOption>
                     </div>
-
                 </div>
-            </div>
+
         </>
 
     )
