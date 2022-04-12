@@ -17,6 +17,7 @@ function OrderCheckout() {
                     <div className={"input_section"}>
                         <input className={"input"} type={"text"} placeholder={"Indtast dit navn"}/>
                         <input className={"input"} type={"text"} placeholder={"Indtast dit telefonnummer"}/>
+                        <textarea className={"input_comment"} type={"text"} placeholder={"Indtast din kommentar"}/>
                     </div>
 
                     {/*show item */}
