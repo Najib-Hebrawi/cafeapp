@@ -39,11 +39,11 @@ function OrderOverviewOption(props){
                             </div>
                         </div>
                         <hr />
-                        <div className="row">
-                            <button onClick={() => history.push('/done_page')}>
-                                Godkend ordre
-                            </button>
-                        </div>
+                        {/*<div className="row">*/}
+                        {/*    <button onClick={() => history.push('/done_page')}>*/}
+                        {/*        Godkend ordre*/}
+                        {/*    </button>*/}
+                        {/*</div>*/}
                     </>
                 )}
             </div>

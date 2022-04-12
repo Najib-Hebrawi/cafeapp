@@ -1,9 +1,8 @@
-POST http://localhost:4000/app/signup
+POST http://localhost:4000/app/order
 Content-Type: application/json
 
 {
-  "fullName": "new name",
-  "username": "TT",
-  "email": "torbentest@gmail.com",
-  "password": "123456"
+  "username": "new name",
+  "phoneNumber": "4456666",
+  "userComment": "extra frugt"
 }

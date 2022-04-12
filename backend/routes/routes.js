@@ -1,14 +1,13 @@
 const express = require('express')
 const {request, response} = require("express");
 const  router = express.Router()
-const signUpTemplateCopy = require('../models/User')
+const requestOrder = require('../models/OrderProduct')
 
-router.post('/signup',async (request,response) =>{
-    const user = await new signUpTemplateCopy({
-        fullName:request.body.fullName,
+router.post('/order',async (request,response) =>{
+    const user = await new requestOrder({
         username:request.body.username,
-        email:request.body.email,
-        password:request.body.password
+        phoneNumber:request.body.phoneNumber,
+        userComment:request.body.userComment
     })
     user.save()
         .then(data => {
@@ -19,5 +18,5 @@ router.post('/signup',async (request,response) =>{
         })
 })
 
-router.get('/signin')
+router.get('/ordered')
 module.exports=router

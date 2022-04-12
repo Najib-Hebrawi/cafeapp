@@ -1,5 +1,5 @@
 
-import React, {Fragment} from 'react';
+import  {Fragment} from 'react';
 import MenuComp from './MenuComp';
 
 export default {title: 'Component|MenuComp'};
