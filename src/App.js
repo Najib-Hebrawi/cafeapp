@@ -5,12 +5,11 @@ import {BrowserRouter as Router, Route, Switch}
 import './App.css';
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
-import Footer from "./component/footer/Footer";
 import MenuPage from "./pages/MenuPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
 import OrderCheckout from "./pages/OrderCheckout";
-import Footers from "./component/footer/Footers";
+import Footer from "./component/footer/Footer";
 import DonePage from "./pages/DonePage";
 
 
@@ -30,7 +29,7 @@ function App() {
                   <Route path='/order_view' component={OrderCheckout} />
                   <Route path='/done_page' component={DonePage} />
               </Switch>
-              <Footers/>
+              <Footer/>
           </Router>
 
 
