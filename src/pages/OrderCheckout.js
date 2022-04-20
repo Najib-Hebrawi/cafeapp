@@ -13,9 +13,14 @@ const OrderCheckout = () =>{
     const [phoneNumber, addPhoneNumbers] = useState('')
     const [userComment, addComments] = useState('')
     const orderId = Date.now()
-    let products = JSON.parse(localStorage.getItem("message"));
+    const cartItems = JSON.parse(localStorage.getItem("message"));
 
     localStorage.setItem("orderId", orderId.toString());
+
+    const productName = cartItems[0].name
+    const productQuantity = cartItems[0].qty
+
+    //console.log(product)
 
 
 
@@ -40,7 +45,8 @@ const OrderCheckout = () =>{
             username: username,
             phoneNumber: phoneNumber,
             userComment: userComment,
-            products:products
+            productName:productName,
+            productQuantity:productQuantity
         }
         axios.post('http://localhost:4000/app/order',addOrder)
             .then(response => console.log(response.data))
@@ -49,7 +55,8 @@ const OrderCheckout = () =>{
             username:'',
             phoneNumber:'',
             userComment:'',
-            products:''
+            productName:'',
+            productQuantity:''
         })
 
 
@@ -92,7 +99,7 @@ const OrderCheckout = () =>{
                 </div>
                 {/*show item */}
                 <div className="shopping_sections">
-                    <OrderOverviewOption  cartItems={products}/>
+                    <OrderOverviewOption  cartItems={cartItems}/>
                     <button type='submit' onClick={onSubmit} >Godkend ordre</button>
                 </div>
             </form>

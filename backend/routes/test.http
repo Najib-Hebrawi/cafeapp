@@ -6,6 +6,5 @@ Content-Type: application/json
   "username": "new name",
   "phoneNumber": "4456666",
   "userComment": "extra frugt",
-  "products": "['123','3344']"
-
+  "product": [{"id": 2, "name": "Dansk pandekager"}, {"id": 1, "name": "Dansk pandekager"}]
 }

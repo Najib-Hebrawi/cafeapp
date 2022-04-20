@@ -18,13 +18,16 @@ const OrderProduct = new mongoose.Schema({
         type:String,
         required:true
     },
-    products : [{
+    productName:{
         type: String
-    }],
+    },
+    productQuantity:{
+        type: String
+    },
     data:{
         type:Date,
         default:Date.now
     }
 })
 
-module.exports=mongoose.model('user', OrderProduct)
+module.exports=mongoose.model('order', OrderProduct)
