@@ -8,7 +8,8 @@ router.post('/order',async (request,response) =>{
         orderId:request.body.orderId,
         username:request.body.username,
         phoneNumber:request.body.phoneNumber,
-        userComment:request.body.userComment
+        userComment:request.body.userComment,
+        products:request.body.products
     })
     requestedOrder.save()
         .then(data => {

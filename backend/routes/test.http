@@ -2,7 +2,10 @@ POST http://localhost:4000/app/order
 Content-Type: application/json
 
 {
+  "orderId": "243435",
   "username": "new name",
   "phoneNumber": "4456666",
-  "userComment": "extra frugt"
+  "userComment": "extra frugt",
+  "products": "['123','3344']"
+
 }

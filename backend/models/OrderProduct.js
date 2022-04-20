@@ -18,6 +18,9 @@ const OrderProduct = new mongoose.Schema({
         type:String,
         required:true
     },
+    products : [{
+        type: String
+    }],
     data:{
         type:Date,
         default:Date.now

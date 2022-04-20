@@ -12,15 +12,13 @@ const OrderCheckout = () =>{
     const [username, addNames] = useState('')
     const [phoneNumber, addPhoneNumbers] = useState('')
     const [userComment, addComments] = useState('')
-    const [orderId, addOrdersId] = useState(Date.now())
-    const products = JSON.parse(localStorage.getItem("message"));
+    const orderId = Date.now()
+    let products = JSON.parse(localStorage.getItem("message"));
 
     localStorage.setItem("orderId", orderId.toString());
 
 
-    function addOrderId(event){
-        addOrdersId(event.target.value)
-    }
+
 
     function addName(event) {
         addNames(event.target.value)
@@ -41,7 +39,8 @@ const OrderCheckout = () =>{
             orderId:orderId,
             username: username,
             phoneNumber: phoneNumber,
-            userComment: userComment
+            userComment: userComment,
+            products:products
         }
         axios.post('http://localhost:4000/app/order',addOrder)
             .then(response => console.log(response.data))
@@ -49,16 +48,14 @@ const OrderCheckout = () =>{
             orderId:'',
             username:'',
             phoneNumber:'',
-            userComment:''
+            userComment:'',
+            products:''
         })
 
 
 
 
     }
-   //console.log(localStorage.getItem("message"));
-    console.log(products.valueOf())
-
 
 
 
