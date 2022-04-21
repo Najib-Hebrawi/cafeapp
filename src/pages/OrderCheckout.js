@@ -14,15 +14,18 @@ const OrderCheckout = () =>{
     const [userComment, addComments] = useState('')
     const orderId = Date.now()
     const cartItems = JSON.parse(localStorage.getItem("message"));
-
     localStorage.setItem("orderId", orderId.toString());
-
-    const productName = cartItems[0].name
-    const productQuantity = cartItems[0].qty
-
-    //console.log(product)
-
-
+    let productName = [];
+    const iterator = cartItems.values()
+    //https://www.geeksforgeeks.org/javascript-array-values/#:~:text=The%20array.,the%20elements%20of%20the%20array.&text=Return%20values%3A,elements%20of%20the%20given%20array.
+    for (let elements of iterator) {
+        productName.push(elements.name)
+    }
+    let productQuantity = []
+    const iterators = cartItems.values()
+    for (let elements of iterators) {
+        productQuantity.push(elements.qty)
+    }
 
 
     function addName(event) {

@@ -18,12 +18,12 @@ const OrderProduct = new mongoose.Schema({
         type:String,
         required:true
     },
-    productName:{
+    productName: [{
         type: String
-    },
-    productQuantity:{
+    }],
+    productQuantity: [{
         type: String
-    },
+    }],
     data:{
         type:Date,
         default:Date.now
