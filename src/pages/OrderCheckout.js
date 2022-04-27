@@ -51,7 +51,7 @@ const OrderCheckout = () =>{
             productName:productName,
             productQuantity:productQuantity
         }
-        axios.post('http://localhost:4000/app/order',addOrder)
+        axios.post('http://localhost:4000/api/orders',addOrder)
             .then(response => console.log(response.data))
         this.setState({
             orderId:'',
