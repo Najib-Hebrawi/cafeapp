@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Navbar from "./component/navbars/Navbar";
+import Navbar from "./component/0_navbars/Navbar";
 import HomePage from "./pages/HomePage";
 import MenuPage from "./pages/MenuPage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -10,7 +10,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
 import OrderCheckout from "./pages/OrderCheckout";
 import DonePage from "./pages/DonePage";
-import Footer from "./component/footer/Footer";
+import Footer from "./component/2_footer/Footer";
 
 
 function App() {

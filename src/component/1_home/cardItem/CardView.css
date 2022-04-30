@@ -1,0 +1,45 @@
+.cards_box {
+    padding: 4rem;
+    background: #FFFDF1;
+}
+
+.header {
+    text-align: center;
+    color: #662626;
+}
+
+.cards_container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards_wrapper {
+    position: relative;
+    width: 120%;
+    margin: 50px 0 45px;
+}
+
+.cards_items {
+    margin-bottom: 24px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .content__blog__container {
+        width: 84%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards_items {
+        display: flex;
+    }
+
+}
+
