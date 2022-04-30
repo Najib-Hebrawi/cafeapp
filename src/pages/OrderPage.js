@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import '../App.css';
 import './OrderPage.css'
 import data from "../component/orders/model/data";
 import ProductOption from "../component/orders/sections/ProductOption";

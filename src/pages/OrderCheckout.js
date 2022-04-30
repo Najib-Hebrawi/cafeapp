@@ -1,5 +1,4 @@
 import React, {Component, useState} from "react";
-import '../App.css';
 import './OrderCheckout.css'
 import axios from "axios";
 import OrderOverviewOption from "../component/orders/sections/OrderOverviewOption";
