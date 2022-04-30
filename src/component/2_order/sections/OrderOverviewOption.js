@@ -1,11 +1,9 @@
 import React from "react";
-import {useHistory} from "react-router-dom";
 import './BasketOption.css';
 
 function OrderOverviewOption(props){
     const { cartItems} = props;
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
-    let history = useHistory();
     return (
         <aside className="block col-1">
             <h3>Ordreoversigt</h3>
@@ -39,11 +37,6 @@ function OrderOverviewOption(props){
                             </div>
                         </div>
                         <hr />
-                        {/*<div className="row">*/}
-                        {/*    <button onClick={() => history.push('/done_page')}>*/}
-                        {/*        Godkend ordre*/}
-                        {/*    </button>*/}
-                        {/*</div>*/}
                     </>
                 )}
             </div>

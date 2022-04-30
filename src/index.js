@@ -10,7 +10,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import OrderPage from "./pages/OrderPage";
 import OrderCheckout from "./pages/OrderCheckout";
 import DonePage from "./pages/DonePage";
-import Footer from "./component/2_footer/Footer";
+import Footer from "./component/4_footer/Footer";
 
 
 function App() {

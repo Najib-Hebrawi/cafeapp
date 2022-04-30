@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import './OrderPage.css'
-import data from "../component/orders/model/data";
-import ProductOption from "../component/orders/sections/ProductOption";
-import BasketOption from "../component/orders/sections/BasketOption";
+import data from "../component/2_order/model/data";
+import ProductOption from "../component/2_order/sections/ProductOption";
+import BasketOption from "../component/2_order/sections/BasketOption";
 
 
 
