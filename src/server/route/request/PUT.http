@@ -1,0 +1,8 @@
+PUT http://localhost:4000/api/orders/626937cbec7a15b2940faa22
+Content-Type: application/json
+
+{
+  "username": "updated",
+  "phoneNumber": "4456666",
+  "userComment": "ikke frugt"
+}

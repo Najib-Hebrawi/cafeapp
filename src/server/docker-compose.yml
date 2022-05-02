@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cafe-test
+    container_name: cafe-app
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  webserver:
+    image: nginx
+    container_name: webserver
+    ports:
+      - "8080:80"
+    volumes:
+      #      - web-root:/var/www/html
+      - /home/app/cafeappbackend/nginx-conf:/etc/nginx/conf.d
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+    depends_on:
+      - nodejs
+    networks:
+      - app-network
+
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=62597
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+    #      - web-root:/var/www/html
+    depends_on:
+      - webserver
+    command: certonly --webroot -webroot-path=/var/www/html --email s201729@student.dtu.dk --agree-tos --no-eff-email --staging -d group13.bhsi.xyz.com -d group13.bhsil.xyz
+
+volumes:
+  certbot-etc:
+  certbot-var:
+  #  web-root:
+  #   driver: local
+  #  driver_opts:
+  #   type: none
+  #  device:
+  # o: bind
+
+networks:
+  app-network:
+    driver: bridge
