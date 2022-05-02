@@ -41,7 +41,7 @@ const OrderCheckout = () =>{
 
 
     function onSubmit(){
-        history.push('/done_page')
+
         const addOrder = {
             orderId:orderId,
             username: username,
@@ -50,36 +50,25 @@ const OrderCheckout = () =>{
             productName:productName,
             productQuantity:productQuantity
         }
-        axios.post('http://localhost:4000/api/orders',addOrder)
-            .then(response => console.log(response.data))
-        this.setState({
-            orderId:'',
-            username:'',
-            phoneNumber:'',
-            userComment:'',
-            productName:'',
-            productQuantity:''
-        })
-
-
-
-
+                 axios.post('http://localhost:4000/api/orders',addOrder)
+                    .then(response =>
+                            history.push('/done_page')
+                        //alert(response.data)
+                    )
+                     .catch((error) => {
+                    let message = typeof error.response !== "undefined" ? error.response.data.message : error.message;
+                    alert(message)
+                    //console.warn("error", message);
+                });
     }
 
 
 
     return(
         <div className="body">
-            <form onSubmit={onSubmit} >
                 {/*write user info*/}
                 <div className={"input_section"}>
 
-                    {/*<input*/}
-                    {/*    className={"input"}*/}
-                    {/*    type={"text"}*/}
-                    {/*    onChange={addOrderId}*/}
-                    {/*    value={orderId}*/}
-                    {/*    placeholder={"Indtast dit navn"}/>*/}
                     <input
                         className={"input"}
                         type={"text"}
@@ -104,7 +93,6 @@ const OrderCheckout = () =>{
                     <OrderOverviewOption  cartItems={cartItems}/>
                     <button type='submit' onClick={onSubmit} >Godkend ordre</button>
                 </div>
-            </form>
         </div>
     )
 

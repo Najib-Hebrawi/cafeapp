@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div `
-
-  padding: 5rem;
+  padding: 10rem;
   margin: 10rem;
-  border-radius: 0.5rem;
-  position: relative;
-
+  box-sizing: content-box;
+  align-items: center;
 `
 
 const Text = styled.h1 `
@@ -18,7 +16,6 @@ const Text = styled.h1 `
 const Dec = styled.h1 `
   font-size: 35px;
   font-weight: 300;
-  margin: 3rem;
 `
 
 
