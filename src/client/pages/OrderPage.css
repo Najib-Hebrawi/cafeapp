@@ -1,10 +1,10 @@
-.body{
-    display:flex;
+.body {
+    display: flex;
     height: 100vh;
 }
 
 /*show category*/
-.sidebar{
+.sidebar {
     margin-top: 30px;
     /*margin-left: 10px;*/
 }
@@ -23,7 +23,7 @@
     outline: none;
 }
 
-.tabs:hover{
+.tabs:hover {
     transition: all 0.3s ease-out;
     background: #EF7631;
     transition: 250ms;
@@ -31,7 +31,7 @@
 
 
 /*to show color in the current selected item*/
-.active-tabs  {
+.active-tabs {
     background: #EF7631;
     border-bottom: 1px solid transparent;
     color: white;
@@ -40,9 +40,9 @@
 /*--------------------------*/
 
 /*show items*/
-.content-tabs{
+.content-tabs {
     flex: .7;
-    flex-grow : 1;
+    flex-grow: 1;
 }
 
 
@@ -58,7 +58,7 @@
 }
 
 /*--------------------------*/
-.shopping_section{
+.shopping_section {
     background-color: #FFFDF1;
     padding: 1rem;
     margin: 0.5rem;
@@ -72,9 +72,3 @@ button {
     border: none;
 
 }
-
-
-
-
-
-

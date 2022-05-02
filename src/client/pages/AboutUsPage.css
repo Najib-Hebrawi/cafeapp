@@ -1,4 +1,4 @@
-img_view{
+img_view {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ img_view{
     border-radius: 8px;
 }
 
-.containers{
+.containers {
     text-align: left;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ img_view{
     height: 30pc;
 }
 
-.head{
+.head {
     text-align: left;
     margin: auto;
     width: 60pc;
@@ -30,7 +30,7 @@ img_view{
 
 }
 
-.text{
+.text {
     text-align: left;
     margin: auto;
     width: 100%;
@@ -39,6 +39,3 @@ img_view{
     padding: 20px;
 
 }
-
-
-

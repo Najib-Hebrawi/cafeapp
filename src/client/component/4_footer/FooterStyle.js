@@ -56,7 +56,7 @@ export const ListItem = styled.li`
 
 `;
 
-export const LinkText = styled.a `
+export const LinkText = styled.a`
   text-decoration: none;
   color: inherit;
 `

@@ -1,4 +1,4 @@
-.img_view{
+.img_view {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -21,11 +21,11 @@
     height: 30pc;
 }
 
-#b1{
+#b1 {
 
     background-image: url('/public/images_KontaktOs/callIcon.jpg');
     background-size: 3rem;
-    background-position:top;
+    background-position: top;
     background-position-y: 2rem;
     background-repeat: no-repeat;
     font-size: 20px;
@@ -38,9 +38,9 @@
     text-align: center;
     display: inline-block !important;
     text-decoration: none;
-    border-radius:  30px;
+    border-radius: 30px;
     border-color: white;
-    border:thick;
+    border: thick;
     cursor: pointer;
     transition: all 0.3s 0s ease-in-out;
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
@@ -50,10 +50,11 @@
     margin-left: 1rem;
 
 }
-#b2{
+
+#b2 {
     background-image: url('/public/images_KontaktOs/mail.jpg');
     background-size: 3rem;
-    background-position:top;
+    background-position: top;
     background-position-y: 2rem;
     background-repeat: no-repeat;
     font-size: 20px;
@@ -66,9 +67,9 @@
     text-align: center;
     display: inline-block !important;
     text-decoration: none;
-    border-radius:  30px;
+    border-radius: 30px;
     border-color: white;
-    border:thick;
+    border: thick;
     cursor: pointer;
     transition: all 0.3s 0s ease-in-out;
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
@@ -77,33 +78,35 @@
     background-color: rgb(239, 239, 248);
     margin-left: 50px;
 
-}#b3{
-     background-image: url('/public/images_KontaktOs/maps.jpg');
-     background-size: 3rem;
-     background-position:top;
-     background-position-y: 2rem;
-     background-repeat: no-repeat;
-     font-size: 20px;
-     font-family: 'Times New Roman', Times, serif;
-     letter-spacing: 2px;
-     font-weight: 1000 !important;
-     background-color: white;
-     color: #662626;
-     padding: 100px 50px;
-     text-align: center;
-     display: inline-block !important;
-     text-decoration: none;
-     border-radius:  30px;
-     border-color: rgb(236, 231, 231);
-     border:transparent;
-     cursor: pointer;
-     transition: all 0.3s 0s ease-in-out;
-     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-     width: 300px;
-     height: 250px;
-     background-color: rgb(239, 239, 248);
-     margin-left: 3rem;
- }
+}
+
+#b3 {
+    background-image: url('/public/images_KontaktOs/maps.jpg');
+    background-size: 3rem;
+    background-position: top;
+    background-position-y: 2rem;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight: 1000 !important;
+    background-color: white;
+    color: #662626;
+    padding: 100px 50px;
+    text-align: center;
+    display: inline-block !important;
+    text-decoration: none;
+    border-radius: 30px;
+    border-color: rgb(236, 231, 231);
+    border: transparent;
+    cursor: pointer;
+    transition: all 0.3s 0s ease-in-out;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    width: 300px;
+    height: 250px;
+    background-color: rgb(239, 239, 248);
+    margin-left: 3rem;
+}
 
 button:hover {
     transform: scale(1.09, 1.09);

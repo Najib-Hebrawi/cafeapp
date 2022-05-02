@@ -1,6 +1,7 @@
-:root{
-    --primary : #EF7631
+:root {
+    --primary: #EF7631
 }
+
 .btn {
     padding: 8px 20px;
     border-radius: 4px;
@@ -9,14 +10,14 @@
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     padding: 8px 20px;
     transition: all 0.3s ease-out;
     background: #e59365;
     transition: 250ms;
 }
 
-.btn--primary{
+.btn--primary {
     background-color: var(--primary);
 }
 

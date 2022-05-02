@@ -1,5 +1,5 @@
 .navbar {
-    background: #FFFDF1;
+    background: #fffdf1;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -40,7 +40,6 @@
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
-
 }
 
 /*.nav-sections {*/
@@ -62,7 +61,7 @@
 }
 
 .fa-bars {
-    color: #EF7631;
+    color: #ef7631;
 }
 
 .nav-links-mobile {
@@ -91,7 +90,7 @@
     }
 
     .nav-menu.active {
-        background: #FFFDF1;
+        background: #fffdf1;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -135,7 +134,7 @@
     }
 
     .fa-times {
-        color: #EF7631;
+        color: #ef7631;
         font-size: 2rem;
     }
 
@@ -148,14 +147,14 @@
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
-        color: #EF7631;
+        color: #ef7631;
         padding: 14px 20px;
-        border: 1px solid #EF7631;
+        border: 1px solid #ef7631;
         transition: all 0.3s ease-out;
     }
 
     .nav-links-mobile:hover {
-        background: #EF7631;
+        background: #ef7631;
         color: #ffffff;
         transition: 250ms;
     }

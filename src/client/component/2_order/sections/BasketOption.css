@@ -2,12 +2,15 @@
     display: flex;
     justify-content: space-between;
 }
+
 .row.center {
     align-items: center;
 }
+
 .col-1 {
     flex: 1;
 }
+
 .col-2 {
     flex: 2;
 }
@@ -26,22 +29,21 @@ button {
     width: 100%;
     cursor: pointer;
 }
+
 button.add {
     background-color: var(--primary);
     width: 1.5rem;
 }
+
 button.remove {
     background-color: var(--primary);
     width: 1.5rem;
 }
 
 
-button:hover{
+button:hover {
     transition: all 0.3s ease-out;
     background: #662626;
     transition: 250ms;
     color: white;
 }
-
-
-

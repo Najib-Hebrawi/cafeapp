@@ -1,16 +1,17 @@
-form, .form-fields {
+form,
+.form-fields {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.body{
-    display:flex;
+.body {
+    display: flex;
     height: 100vh;
 
 }
 
-.input_section{
+.input_section {
     margin-left: 4rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -20,7 +21,7 @@ form, .form-fields {
 
 }
 
-.input{
+.input {
     display: flex;
     -webkit-appearance: none;
     padding: 12px;
@@ -33,7 +34,7 @@ form, .form-fields {
 }
 
 
-.input_comment{
+.input_comment {
     display: flex;
     padding: 12px;
     border-radius: 3px;
@@ -45,17 +46,17 @@ form, .form-fields {
 
 
 
-.input::placeholder{
+.input::placeholder {
     color: #662626;
-    transition:color 0.3s ease ;
+    transition: color 0.3s ease;
 }
 
-.input_comment::placeholder{
+.input_comment::placeholder {
     color: #662626;
-    transition:color 0.3s ease ;
+    transition: color 0.3s ease;
 }
 
-.shopping_sections{
+.shopping_sections {
     background-color: #FFFDF1;
     padding: 1rem;
     margin-right: 4rem;
@@ -64,4 +65,3 @@ form, .form-fields {
     border-radius: 0.5rem;
     flex: .3;
 }
-
