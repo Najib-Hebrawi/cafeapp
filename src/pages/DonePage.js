@@ -2,10 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div `
-  padding: 10rem;
-  margin: 10rem;
-  box-sizing: content-box;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  object-fit: contain;
 `
 
 const Text = styled.h1 `
