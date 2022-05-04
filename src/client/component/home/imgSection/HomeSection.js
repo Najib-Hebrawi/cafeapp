@@ -9,9 +9,8 @@ function HomeSection() {
 
       <div className="home-section-btn">
         <MenuButton
-          className="btn"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
         >
           {" "}
           Se Menu
