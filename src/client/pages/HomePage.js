@@ -1,7 +1,7 @@
 import React from "react";
-import HomeSection from "../component/1_home/imgSection/HomeSection";
-import CardView from "../component/1_home/cardItem/CardView";
-import Slider from "../component/1_home/slider/Slider";
+import HomeSection from "../component/home/imgSection/HomeSection";
+import CardView from "../component/home/cardItem/CardView";
+import Slider from "../component/home/slider/Slider";
 
 function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./OrderCheckout.css";
 import axios from "axios";
-import OrderOverviewOption from "../component/2_order/sections/OrderOverviewOption";
+import OrderOverviewOption from "../component/order/sections/OrderOverviewOption";
 import { useHistory } from "react-router-dom";
 
 const OrderCheckout = () => {
