@@ -45,8 +45,10 @@ const OrderCheckout = () => {
       productName: productName,
       productQuantity: productQuantity,
     };
+    //group13.bhsi.xyz:5000/api/orders/
+    //http://localhost:4000/api/orders
     axios
-      .post("http://localhost:4000/api/orders", addOrder)
+      .post("http://group13.bhsi.xyz:5000/api/orders/", addOrder)
       .then(
         (response) => history.push("/done_page")
         //alert(response.data)
